@@ -1,0 +1,17 @@
+/* 반응형은 모바일부터 시작하여 PC로 */
+/* 마크업은 전체적인것 부터 */
+
+/* reset */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
