@@ -25,10 +25,15 @@ body {
   margin: 100px auto;
 }
 
+.clearfix::after {
+  content: '';
+  display: block;
+  clear:both;
+}
+
 .sq {
   color: white;
   background-color: #111;
-  overflow:hidden;
   /* 높이를 살리기위해 */
 
   padding:1rem;
@@ -86,4 +91,10 @@ body {
 
   margin: 1rem;
   padding: 1rem;
+
+  transition: transform 1s;
+}
+
+.sq-item-anchor:hover{
+  transform: scale(1.3);
 }
