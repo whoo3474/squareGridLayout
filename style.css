@@ -15,3 +15,75 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+body {
+  background-color: #222;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 100px auto;
+}
+
+.sq {
+  color: white;
+  background-color: #111;
+  overflow:hidden;
+  /* 높이를 살리기위해 */
+
+  padding:1rem;
+}
+
+.sq-item {
+  float: left;
+  /* 자식이 float가 되면 부모는 높이가 0이 되어버린다 */
+
+  /* width: 200px;
+  height:200px;
+  얘를 px로 줘버리면 유지보수가 힘들어진다.
+  wrapper가 바뀌어 버리면 */
+
+  width:25%;
+  /* height:25%;
+  height가 안잡힌다.
+  why? 부모인 sq는 content만큼만 높이를 가지고있기때문에. */
+
+  padding-top:25%;
+  /* width를 받아와서 padding-top이 변동됨 */
+
+  position: relative;
+}
+
+.sq-item-large {
+  width: 50%;
+  padding-top: 50%;
+}
+
+.sq-item-long{
+  padding-top:75%;
+}
+
+.sq-item-wide{
+  width: 50%;
+}
+
+.sq-item-float-right {
+  float: right;
+}
+
+.sq-item-anchor {
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* width:100%;
+  height:100%; 
+  지정 안하는게 좋다
+  boder와 margin등이 제대로 안움직임*/
+  right:0;
+  bottom:0;
+  /* 이렇게 넓이와 높이를 준다. */
+
+  margin: 1rem;
+  padding: 1rem;
+}
